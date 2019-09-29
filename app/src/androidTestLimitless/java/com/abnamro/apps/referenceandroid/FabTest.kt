@@ -4,20 +4,16 @@ import android.content.Intent
 import androidx.test.espresso.intent.Intents.intended
 import androidx.test.espresso.intent.matcher.IntentMatchers.*
 import androidx.test.espresso.intent.rule.IntentsTestRule
+import com.abnamro.apps.referenceandroid.helpers.BaseTest
 import com.abnamro.apps.referenceandroid.pageobject.MainPageObject
 import org.hamcrest.CoreMatchers.allOf
 import org.hamcrest.CoreMatchers.equalTo
 import org.junit.Rule
 import org.junit.Test
 
-class FabTest {
+class FabTest: BaseTest() {
 
     private val mainPage = MainPageObject()
-
-    @Rule
-    @JvmField
-    val activityTestRule: IntentsTestRule<MainActivity> =
-        IntentsTestRule(MainActivity::class.java)
 
     @Test
     fun checkEmailButton() {
