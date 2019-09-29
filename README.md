@@ -1,18 +1,26 @@
-# Test assignment
+# REFERENCE_ANDROID tests and how to run them
 
-We are looking for Automation Engineers that have the mindset "only the sky is the limit" and "automation doesn't stop at testing, it's just a beginning!" ;)
+This project contains two build variants:
+- original  
+- limitless  
 
-The purpose of this test assignment is to assess the applicant's automation skills, allowing him/her to show the best they can do and how fast they can learn.
-It is an open assignment. There is no the right answer and there is no end goal other than proving yourself. Surprise us!
+The original version of the project contains the app as it was sent to me 
+(with minor additions to facilitate testing)
+ 
+The limitless version contains the same app, but with added e-mail functionality for the email  
+button.
 
-Make sure that you give detailed comments or descriptions of your tests.
-When the assignment is complete, please push your solution to Github(Gitlab) and send us the link to hr.grid.adi@nl.abnamro.com.
-If you have any questions, please contact us at hr.grid.adi@nl.abnamro.com.
+# how to run  
 
-Good luck.
+In terminal, navigate to the root project folder  
+then run  
 
-PS. We don't expect you to spend weeks (and sleepless nights) on doing it. Lets see how far you can get in 6-10 hours. We want to see how you approach and solve problems.
+- for original  
+./gradlew connectedOriginalDebugAndroidTest  
 
-PSPS. Please use mobile native tools. (Tests written on Java are accepted too)
+- for limitless  
+./gradlew connectedLimitlessDebugAndroidTest  
 
+- for all tests (original and limitless combined)  
+./gradlew connectedAndroidTest  
 
